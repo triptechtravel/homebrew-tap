@@ -11,7 +11,7 @@ class Clickup < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/triptechtravel/clickup-cli/releases/download/v0.10.0/clickup_darwin_amd64.tar.gz"
-      sha256 "4ed62112b93c5bd873de05b1b1506c70cb72cbb8f1c18617b7884dde0d66ed1b"
+      sha256 "8a26064399d5ebcb6c8c416be9e1a610f1b109ceb1e6647961f4ada30bbf7d6f"
 
       def install
         bin.install "clickup"
@@ -19,7 +19,7 @@ class Clickup < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/triptechtravel/clickup-cli/releases/download/v0.10.0/clickup_darwin_arm64.tar.gz"
-      sha256 "70663cd4017282f1e9a0aacc338b801a2bc5c89355d474ab7145d377baaa1208"
+      sha256 "20632f89ac1cd7521cbb09a9224d784e7c6044460958c04c967ff162945e0aef"
 
       def install
         bin.install "clickup"
@@ -30,14 +30,14 @@ class Clickup < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/triptechtravel/clickup-cli/releases/download/v0.10.0/clickup_linux_amd64.tar.gz"
-      sha256 "4ad99e5a83118ad861b8829833f807624aa4760e6ee2f2cf4b4c712ad3746a24"
+      sha256 "e5d0e649894814b6f9db41117a9f34e4ebaffa4f552c8342dfc768aa6c4663a6"
       def install
         bin.install "clickup"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/triptechtravel/clickup-cli/releases/download/v0.10.0/clickup_linux_arm64.tar.gz"
-      sha256 "eeb07e71324623268e794c3182f89356306fd88c208a122edb8d212b2569da0d"
+      sha256 "440524f5f434b1819aee66cb2b26ebf0422062e5486354099055271b30845675"
       def install
         bin.install "clickup"
       end
