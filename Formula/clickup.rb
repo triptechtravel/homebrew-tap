@@ -5,21 +5,21 @@
 class Clickup < Formula
   desc "CLI tool for ClickUp task management with GitHub integration"
   homepage "https://github.com/triptechtravel/clickup-cli"
-  version "0.13.0"
+  version "0.14.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/triptechtravel/clickup-cli/releases/download/v0.13.0/clickup_darwin_amd64.tar.gz"
-      sha256 "f374743caad5a854570c61cac76c0689b8882e44b44fc3eb1abfca3f4df193c3"
+      url "https://github.com/triptechtravel/clickup-cli/releases/download/v0.14.0/clickup_darwin_amd64.tar.gz"
+      sha256 "6f1d9643a26cd9835e61767a8c35fb0541802f276a0854aab5325e9725ac285c"
 
       define_method(:install) do
         bin.install "clickup"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/triptechtravel/clickup-cli/releases/download/v0.13.0/clickup_darwin_arm64.tar.gz"
-      sha256 "bbca0bb82605c14cdb728223e756a46c0f4fbf6bb54aaad238ca186e34ff6322"
+      url "https://github.com/triptechtravel/clickup-cli/releases/download/v0.14.0/clickup_darwin_arm64.tar.gz"
+      sha256 "00913fa0ea4f69c70ecff97bdc645648e9d2755dc21366b502d93f27bd673956"
 
       define_method(:install) do
         bin.install "clickup"
@@ -29,15 +29,15 @@ class Clickup < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/triptechtravel/clickup-cli/releases/download/v0.13.0/clickup_linux_amd64.tar.gz"
-      sha256 "ee26a1087af81cce9e97fcc752ac8c4096ca8b0186bc87118cbc86362d3e1744"
+      url "https://github.com/triptechtravel/clickup-cli/releases/download/v0.14.0/clickup_linux_amd64.tar.gz"
+      sha256 "f0dc61278999457daf35c5902ee275335e895c12561253d0edc4f5f99e2b2294"
       define_method(:install) do
         bin.install "clickup"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/triptechtravel/clickup-cli/releases/download/v0.13.0/clickup_linux_arm64.tar.gz"
-      sha256 "bd9a5672a0f00ff1cbd7454c91516a7d3934e07393570cae25aca044e83c54db"
+      url "https://github.com/triptechtravel/clickup-cli/releases/download/v0.14.0/clickup_linux_arm64.tar.gz"
+      sha256 "27946d4c4071d9fe8c6a7e49fc9222b0688ba5a50a4b0738857b3e52f6d374a1"
       define_method(:install) do
         bin.install "clickup"
       end
