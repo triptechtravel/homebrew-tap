@@ -5,21 +5,21 @@
 class Slackbuzz < Formula
   desc "CLI tool for Slack messaging, channel management, and search"
   homepage "https://github.com/triptechtravel/slackbuzz-cli"
-  version "0.12.0"
+  version "0.12.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/triptechtravel/slackbuzz-cli/releases/download/v0.12.0/slackbuzz_darwin_amd64.tar.gz"
-      sha256 "9e7877123fa36e88326ad5b1d15e8df6635ad2259e999de3a63941703d4032d6"
+      url "https://github.com/triptechtravel/slackbuzz-cli/releases/download/v0.12.1/slackbuzz_darwin_amd64.tar.gz"
+      sha256 "791e57131bb262ef6d7b644b2fae5dfef4789de155d714165fc9a9ed165be98e"
 
       define_method(:install) do
         bin.install "slackbuzz"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/triptechtravel/slackbuzz-cli/releases/download/v0.12.0/slackbuzz_darwin_arm64.tar.gz"
-      sha256 "caf6b091e816134a3a1c8a4bcb3cbfded65dbc37a878c515b9e24fd0e1717726"
+      url "https://github.com/triptechtravel/slackbuzz-cli/releases/download/v0.12.1/slackbuzz_darwin_arm64.tar.gz"
+      sha256 "a1d0c712b8ddbb1c5c81d8139ca1bcfd9bc484b94320f06b16d10daeaa42346d"
 
       define_method(:install) do
         bin.install "slackbuzz"
@@ -29,15 +29,15 @@ class Slackbuzz < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/triptechtravel/slackbuzz-cli/releases/download/v0.12.0/slackbuzz_linux_amd64.tar.gz"
-      sha256 "57b47d4eaffaa5d05d92874775619ca05291dbb315f238ab8e11712865bc2b47"
+      url "https://github.com/triptechtravel/slackbuzz-cli/releases/download/v0.12.1/slackbuzz_linux_amd64.tar.gz"
+      sha256 "dd6e399b700df173f34b7c8c6b38f3fdac1a758f896e1713ca9ef5f3940fd809"
       define_method(:install) do
         bin.install "slackbuzz"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/triptechtravel/slackbuzz-cli/releases/download/v0.12.0/slackbuzz_linux_arm64.tar.gz"
-      sha256 "11e05b06fcef2891233a9319aad3094813393e4acea55c8a98db96758740b075"
+      url "https://github.com/triptechtravel/slackbuzz-cli/releases/download/v0.12.1/slackbuzz_linux_arm64.tar.gz"
+      sha256 "da27ef2e46f646f337b34c52da0b7a29ea202bc56a4cf27b346bb69fc4527166"
       define_method(:install) do
         bin.install "slackbuzz"
       end
